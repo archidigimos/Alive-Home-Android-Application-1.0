@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/st">
+
+    <Button
+        android:text="SKIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/second_next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:id="@+id/second_skip"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_next"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

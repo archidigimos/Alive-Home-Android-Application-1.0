@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:app3="http://schemas.android.com/apk/res-auto"
+    xmlns:app4="http://schemas.android.com/apk/res-auto"
+    xmlns:app5="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgnd">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bulboff"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="157dp"
+        android:id="@+id/tubelight"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app4:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/alive" />
+
+    <ImageSwitcher
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app2:srcCompat="@drawable/fan"
+        android:id="@+id/fanAlive"
+        android:layout_alignTop="@+id/tubelight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:layout_below="@+id/fanAlive"
+        android:layout_marginTop="41dp"
+        android:id="@+id/fanSpeed"
+        android:layout_alignLeft="@+id/fanAlive"
+        android:layout_alignStart="@+id/fanAlive"
+        android:layout_alignRight="@+id/fanAlive"
+        android:layout_alignEnd="@+id/fanAlive" />
+</RelativeLayout>

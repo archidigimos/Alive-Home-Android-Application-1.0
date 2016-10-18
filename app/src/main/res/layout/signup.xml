@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgnd">
+
+    <TextView
+        android:text="RE ENTER PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_signup"
+        android:layout_alignLeft="@+id/repassword_signup"
+        android:layout_alignStart="@+id/repassword_signup"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView5"
+        android:layout_alignRight="@+id/repassword_signup"
+        android:layout_alignEnd="@+id/repassword_signup"
+        android:fontFamily="monospace"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="USERNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/uname_signup"
+        android:layout_alignStart="@+id/uname_signup"
+        android:layout_alignRight="@+id/uname_signup"
+        android:layout_alignEnd="@+id/uname_signup"
+        android:fontFamily="monospace"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:id="@+id/uname_signup"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <TextView
+        android:text="PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/uname_signup"
+        android:layout_alignLeft="@+id/uname_signup"
+        android:layout_alignStart="@+id/uname_signup"
+        android:layout_marginTop="13dp"
+        android:layout_alignRight="@+id/uname_signup"
+        android:layout_alignEnd="@+id/uname_signup"
+        android:textSize="16sp"
+        android:fontFamily="monospace" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/password_signup"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:text="SIGNUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/signup"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.Button"
+        android:fontFamily="monospace"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/hardwareID_signup"
+        android:layout_above="@+id/signup"
+        android:layout_alignLeft="@+id/repassword_signup"
+        android:layout_alignStart="@+id/repassword_signup"
+        android:layout_marginBottom="15dp"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <TextView
+        android:text="HARDWARE ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/hardwareID_signup"
+        android:layout_alignLeft="@+id/hardwareID_signup"
+        android:layout_alignStart="@+id/hardwareID_signup"
+        android:textSize="16sp"
+        android:fontFamily="monospace" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/repassword_signup"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/password_signup"
+        android:layout_alignStart="@+id/password_signup" />
+</RelativeLayout>
